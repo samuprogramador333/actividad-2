@@ -1,29 +1,29 @@
 .galeria {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 40px; 
-    max-width: 8000px; 
-    margin: 0 auto; 
+    display: flex; /*Utiliza el modelo de flexbox para organizar los elementos hijos  en un contenedor */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no hay suficiente espacio horizontal en el contenedor. */
+    justify-content: center; /* Centra los elementos dentro del contenedor horizontalmente.*/
+    gap: 40px; /*  Establece un espacio de 40 píxeles entre cada uno de los elementos flexibles*/
+    max-width: 8000px; /* Define un ancho máximo para el contenedor de la galería*/
+    margin: 0 auto; /*  Centra el contenedor en la página al establecer márgenes automáticos a los lados.*/
 }
 .galeria img {
-    width: 23%; 
-    height: auto; 
-    object-fit: cover; 
+    width: 23%; /*  Cada imagen ocupará el 23% del ancho del contenedor.*/
+    height: auto; /*  Mantiene la proporción de aspecto de la imagen.*/
+    object-fit: cover; /*  Asegura que la imagen cubra completamente su contenedor*/
 }
 .galeria img {
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+    border-radius: 5px;/*Aplica esquinas redondeadas de 5 píxeles a las imágenes*/
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);/*Añade una sombra sutil debajo de las imágenes*/
+    transition: all 0.3s ease;/*Permite que todos los cambios de estilo se realicen de forma suave durante 0.3 segundos.*/
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) {/*Define un conjunto de estilos que se aplicarán solo si la pantalla tiene un ancho máximo de 768 píxeles.*/
     .galeria img {
-        width: 90%; 
+        width: 90%; /*Cambia el ancho de las imágenes al 90% del contenedor, permitiendo que se muestren una por fila en dispositivos más pequeños*/
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px) {/*Define estilos adicionales que se aplican a pantallas con un ancho máximo de 500 píxeles.*/
     .galeria img {
-        width: 100%; 
+        width: 100%; /*Establece que cada imagen ocupe el 100% del ancho del contenedor*/
     }
 }
